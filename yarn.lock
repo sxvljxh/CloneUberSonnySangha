@@ -6093,6 +6093,10 @@
   dependencies:
     "lodash" "^4.17.15"
 
+"react-native-responsive-screen@github:gregfenton/react-native-responsive-screen":
+  "resolved" "git+ssh://git@github.com/gregfenton/react-native-responsive-screen.git#de671383eef213003ed1331a651dc689cb5889a4"
+  "version" "1.4.1"
+
 "react-native-safe-area-context@^3.1.9", "react-native-safe-area-context@^3.3.2", "react-native-safe-area-context@>= 3.0.0":
   "integrity" "sha512-yOwiiPJ1rk+/nfK13eafbpW6sKW0jOnsRem2C1LPJjM3tfTof6hlvV5eWHATye3XOpu2cJ7N+HdkUvUDGwFD2Q=="
   "resolved" "https://registry.npmjs.org/react-native-safe-area-context/-/react-native-safe-area-context-3.3.2.tgz"
@@ -6138,7 +6142,7 @@
     "normalize-css-color" "^1.0.2"
     "prop-types" "^15.6.0"
 
-"react-native@*", "react-native@>= 0.51", "react-native@>= 0.59", "react-native@>=0.63.0", "react-native@0.67.1":
+"react-native@*", "react-native@>= 0.51", "react-native@>= 0.59", "react-native@>=0.35", "react-native@>=0.63.0", "react-native@0.67.1":
   "integrity" "sha512-doKN9qhtjilF+6p8603OVzqGKL4fq8EDAH5u00KPmZbL5ampHDQX9y8/uwlUvJggvHwZXlnvhW63u8Y1LA8rxw=="
   "resolved" "https://registry.npmjs.org/react-native/-/react-native-0.67.1.tgz"
   "version" "0.67.1"

@@ -10,6 +10,7 @@ import {
 } from 'react-native';
 import {Icon} from 'react-native-elements';
 import tw from 'tailwind-react-native-classnames';
+import Menu from './Menu';
 
 const data = [
   {
@@ -26,32 +27,13 @@ const data = [
   },
 ];
 
-export default function NavOptions() {
-  const navigation = useNavigation();
+export default function NavOptions({pos}) {
   return (
     <FlatList
       data={data}
       horizontal
       keyExtractor={item => item.id}
-      renderItem={({item}) => (
-        <TouchableOpacity
-          style={tw`p-2 pl-6 pb-8 pt-4 bg-gray-200 m-2 w-40`}
-          onPress={() => navigation.navigate(item.screen)}>
-          <View>
-            <Image
-              source={{uri: item.image}}
-              style={{width: 120, height: 120, resizeMode: 'contain'}}
-            />
-            <Text style={tw`mt-2 text-lg`}>{item.title}</Text>
-            <Icon
-              name="arrowright"
-              type="antdesign"
-              color="white"
-              style={tw`p-2 bg-black rounded-full w-10`}
-            />
-          </View>
-        </TouchableOpacity>
-      )}
+      renderItem={({item}) => <Menu item={item} pos={pos} />}
     />
   );
 }
